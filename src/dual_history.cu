@@ -2,7 +2,7 @@
 #include "anderson_device/dual_history.cuh"
 #include "anderson_device/uv_solver.h"
 
-#include "qutility_device/dual_field/dual_field.h"
+#include "qutility_device/field.h"
 
 #include "device_api/device_api_helper.h"
 

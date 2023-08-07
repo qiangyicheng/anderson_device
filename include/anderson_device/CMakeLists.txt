@@ -17,7 +17,7 @@ target_link_libraries(${PROJECT_NAME}_${CURRENT_TARGET_NAME} PUBLIC
     qutility_device_def
     qutility_device_event
     qutility_device_workspace
-    qutility_device_dual_field
+    qutility_device_field
     device_api
 )
 
@@ -54,7 +54,7 @@ target_link_libraries(${PROJECT_NAME}_${CURRENT_TARGET_NAME} PUBLIC
     qutility_device_def
     qutility_device_event
     qutility_device_workspace
-    qutility_device_dual_field
+    qutility_device_field
     device_api
 )
 

@@ -13,7 +13,7 @@
 #include "qutility_device/def.h"
 #include "qutility_device/event.h"
 #include "qutility_device/workspace.h"
-#include "qutility_device/dual_field/dual_field_declare.h" //only include the declaration of the templates, avoiding cuda_samplers.h since it has side effects
+#include "qutility_device/field/field_declare.h" //only include the declaration of the templates, avoiding cuda_samplers.h since it has side effects
 
 #include "qutility/history.h"
 #include "qutility/message.h"
@@ -33,7 +33,7 @@ namespace anderson
             using ValT = double;
             using ArrayT = qutility::array_wrapper::DArrayGPU<ValT>;
             using HistoryT = qutility::history::DHistory<ValT>;
-            using DualFieldT = qutility::device::dual_field::DualField<ValT>;
+            using DualFieldT = qutility::device::field::DualField<ValT>;
             using WorkspaceT = qutility::device::workspace::Workspace<ValT>;
 
             using MaskValT = int;
