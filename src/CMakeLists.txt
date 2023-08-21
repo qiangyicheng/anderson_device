@@ -22,7 +22,7 @@ if(ANDERSON_DEVICE_USE_CUDA)
 
     if(EXISTS "${CUDAToolkit_BIN_DIR}/../samples/common/inc/helper_cuda.h")
         message(STATUS "Header helper_cuda.h is found in ${CUDAToolkit_BIN_DIR}/../samples/common/inc/")
-        target_include_directories(qutility_device_${CURRENT_TARGET_NAME} PRIVATE ${CUDAToolkit_BIN_DIR}/../samples/common/inc/)
+        target_include_directories(${PROJECT_NAME}_${CURRENT_TARGET_NAME} PRIVATE ${CUDAToolkit_BIN_DIR}/../samples/common/inc/)
     else()
         message(STATUS "Header helper_cuda.h is not found in ${CUDAToolkit_BIN_DIR}/../samples/common/inc/. Fetch cuda-samples")
 
@@ -73,7 +73,7 @@ if(ANDERSON_DEVICE_USE_CUDA)
 
     if(EXISTS "${CUDAToolkit_BIN_DIR}/../samples/common/inc/helper_cuda.h")
         message(STATUS "Header helper_cuda.h is found in ${CUDAToolkit_BIN_DIR}/../samples/common/inc/")
-        target_include_directories(qutility_device_${CURRENT_TARGET_NAME} PRIVATE ${CUDAToolkit_BIN_DIR}/../samples/common/inc/)
+        target_include_directories(${PROJECT_NAME}_${CURRENT_TARGET_NAME} PRIVATE ${CUDAToolkit_BIN_DIR}/../samples/common/inc/)
     else()
         message(STATUS "Header helper_cuda.h is not found in ${CUDAToolkit_BIN_DIR}/../samples/common/inc/. Fetch cuda-samples")
 
