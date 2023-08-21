@@ -20,7 +20,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 include(FetchContent)
 FetchContent_Declare(device_api
-    GIT_REPOSITORY https://github.com/qiangyicheng/device_api.git
+    GIT_REPOSITORY git@github.com:qiangyicheng/device_api.git
 )
 FetchContent_GetProperties(device_api)
 
@@ -30,7 +30,7 @@ if(NOT device_api_POPULATED)
 endif()
 
 FetchContent_Declare(qutility
-    GIT_REPOSITORY https://github.com/qiangyicheng/qutility_cmake.git
+    GIT_REPOSITORY git@github.com:qiangyicheng/qutility_cmake.git
     GIT_TAG main
 )
 
@@ -40,7 +40,7 @@ if(NOT qutility_POPULATED)
 endif()
 
 FetchContent_Declare(qutility_device
-    GIT_REPOSITORY https://github.com/qiangyicheng/qutility_device.git
+    GIT_REPOSITORY git@github.com:qiangyicheng/qutility_device.git
     GIT_TAG main
 )
 
